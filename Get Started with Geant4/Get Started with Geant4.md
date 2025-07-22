@@ -10,4 +10,6 @@ The most basic G4 program consists on one **Main File**, which initializes a **R
 
 ## Installation of Geant4 with Qt
 
-We installed Geant4 on Windows 11, using CMake, Visual Studio code, and Qt as a visualization driver. We followed @john9francis tutorial on [Installing and Compiling Geant4 with Qt visualization driver](https://github.com/john9francis/radiation-modeling/blob/main/g4-install-instructions-qt.md)
+We installed Geant4 on Windows 11, using CMake, Visual Studio code, and Qt as a visualization driver. We followed @john9francis GitHub tutorial on [Installing and Compiling Geant4 with Qt visualization driver](https://github.com/john9francis/radiation-modeling/blob/main/g4-install-instructions-qt.md), which is very well documented and easy for our purposes.
+
+You can also find his tutorial on Youtube, where the same steps are followed: [Geant4 Installation with Qt 2023](https://youtu.be/rtCsfDD45Bc)
