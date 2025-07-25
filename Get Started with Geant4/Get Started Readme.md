@@ -6,7 +6,7 @@ Geant4 (G4) is a Monte-Carlo toolkit used to simulate passage of particles (elec
 
 ## Basic G4 Application Structure
 
-The most basic G4 program consists on one **Main File**, which initializes a **Run Manager Class**, and this one initializes a **Primary Generator Action Class**, that generates whatever particle you use; a **Physcis List Class**, that regulates the physics processes; and a **Detector Constructor Class**, which defines the geometries for the particles to interact with and get the data. This classes will be exemplified in the practicle examples of this GitHub Repository.
+Most G4 program consists on the folowing structure: one **Main File**, which initializes a **Run Manager Class**, and this one initializes a **Primary Generator Action Class**, that generates whatever particle you use; a **Physcis List Class**, that regulates the physics processes; and a **Detector Constructor Class**, which defines the geometries for the particles to interact with and get the data. This classes will be exemplified in the practicle examples of this GitHub Repository.
 
 ## Installation of Geant4 with Qt
 
@@ -18,8 +18,10 @@ In @john9francis tutorial you will also be able to understand how to run an exam
 
 If you want to see the code of your first project example, you just have to go to VS and open the folder in which the build, src and include directories are located. You will be able to see the code from the main file, the headers (include folder) and source code for each header (src folder).
 
-## Simple G4 Program
+## Simple G4 Program / G4-Hello-World
 
-We found out, in one of @john9francis Github repositories, a really simple Hello_World project that he developed, as a base to start building future applications. This projects consists of a basic G4 program with the CMakeList file already created, so that you can simply change the name and compile it with CMake. Then you can start writing any application that you want. The program will automatically be linked with the G4 source code and copy the mac files in the same directory as the executable files.
+We found out, in one of @john9francis Github repositories, a really simple G4-Hello-World project that he developed, as a base to start building future applications. This projects consists of a basic G4 program with the CMakeList file already created, so that you can simply change the name and compile it with CMake. Then you can start writing any application that you want. The program will automatically be linked with the G4 source code and copy the mac files in the same directory as the executable files.
 
 Download the application as a zip file from his repository [G4-Hello-World](https://github.com/john9francis/G4-Hello-World), and read the Readme file in it, as it contains important information about how the program works and it's compiled.
+
+This really basic application includes a CMakeList file to compile the project with CMake and VS, also source and include folders, which are empty because there are no classes defined yet (like PrimaryGeneratorAction class or DetectorConstructor class). There is also a mac_files folder with a test file that prints Hello World, and a main c++ file called Hello_World.cc
