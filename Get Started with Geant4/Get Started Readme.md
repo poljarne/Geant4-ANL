@@ -17,3 +17,9 @@ You can also find his tutorial on Youtube, where the same steps are followed: [G
 In @john9francis tutorial you will also be able to understand how to run an example project from the Geant4 shared examples and visualize it with Qt GUI. It also includes reference links to download and install all the prerequisites, and other useful information.
 
 If you want to see the code of your first project example, you just have to go to VS and open the folder in which the build, src and include directories are located. You will be able to see the code from the main file, the headers (include folder) and source code for each header (src folder).
+
+## Simple G4 Program
+
+We found out, in one of @john9francis Github repositories, a really simple Hello_World project that he developed, as a base to start building future applications. This projects consists of a basic G4 program with the CMakeList file already created, so that you can simply change the name and compile it with CMake. Then you can start writing any application that you want. The program will automatically be linked with the G4 source code and copy the mac files in the same directory as the executable files.
+
+Download the application as a zip file from his repository [G4-Hello-World](https://github.com/john9francis/G4-Hello-World), and read the Readme file in it, as it contains important information about how the program works and it's compiled.
