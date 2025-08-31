@@ -25,3 +25,7 @@ We found out, in one of @john9francis Github repositories, a really simple G4-He
 Download the application as a zip file from his repository [G4-Hello-World](https://github.com/john9francis/G4-Hello-World), and read the Readme file in it, as it contains important information about how the program works and it's compiled.
 
 This really basic application includes a CMakeList file to compile the project with CMake and VS, also source and include folders, which are empty because there are no classes defined yet (like PrimaryGeneratorAction class or DetectorConstructor class). There is also a mac_files folder with a test file that prints Hello World, and a main c++ file called Hello_World.cc
+
+### Main file
+
+In this folder you will be able to find main_file.cc, which is an example of what the mail file af a G4 program should look like.
