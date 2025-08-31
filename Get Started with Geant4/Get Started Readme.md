@@ -28,4 +28,4 @@ This really basic application includes a CMakeList file to compile the project w
 
 ### Main file
 
-In this folder you will be able to find main_file.cc, which is an example of what the mail file af a G4 program should look like.
+In this folder you will be able to find main_file.cc, which is an example of what the mail file af a G4 program should look like. Basically this file either processes a macro file to run the program from the console, or starts the UI session directly (double click on the executable file). You can also use the main file to initialize other classes such as DetectorConstruction, PhyscisList or ActionInitialization.
