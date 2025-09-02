@@ -16,4 +16,8 @@ The main file includes the main function, which does the following: If this prog
 
 ### MyActionInitialization Class
 
+This class is responsible for initializing the MySteppingAction, MyPrimaryGeneratorAction, and MyRunAction classes. Using lines of code such as:
+
+SetUserAction(new MyPrimaryGeneratorAction());
+
 
