@@ -5,3 +5,7 @@ This is where I expose the work done using Geant4, in the field of nuclear react
 The first project consists of shooting gamma rays of a certain energy at a thin layer of 197Au, thus producing the photonuclear reaction. The program measures the yield of 196Au, allowing the cross sections of a certain gamma energy to be calculated.
 
 The second one is based on the first one but has a key difference. The gammas are produced by Bremsstrahlung effect, by shooting electrons on a tungsten layer. This gammas produced are a spectrum of different energies. Right in front of the tungsten there is a detector that counts how many gammas of a given energy range there are, and right in front of that we can find our target. The target is a Au197 block of 8 mm deep, in which the photonuclear reactions happen. The yield of 196Au produced is also measured.
+
+## Photonuclear-Au-8mm
+
+You can download the project from my repository 
