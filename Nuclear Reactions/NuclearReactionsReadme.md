@@ -34,4 +34,8 @@ The physics list used in this program is QGSP_BERT_HP().
 
 * QGSP_BERT_HP: identical to QGSP_BERT except that neutrons of 20 MeV and lower use the new version (alternative to the one of FTFP_BERT_HP) of the High Precision neutron models and cross sections to describe elastic and inelastic scattering, capture and fission, the last process is added. Additionally radioactive decay is activated. Since Geant4 version 11.2, the physics list QGSP_BERT_HP has a treatment of low energy (<20 MeV) neutrons which is not the same as for the other HP-based reference physics list (FTFP_BERT_HP, QGSP_BIC_HP, Shielding, etc.).
 
+### MyPrimaryGeneratorAction Class
+
+
+
 
