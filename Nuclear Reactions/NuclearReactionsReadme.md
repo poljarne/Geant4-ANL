@@ -8,4 +8,4 @@ The second one is based on the first one but has a key difference. The gammas ar
 
 ## Photonuclear-Au-8mm
 
-You can download the project from my repository 
+You can download the project from my repository [Photonuclear-Au-8mm](https://github.com/pjarnecup/Photonuclear-Au-8mm/tree/main)
