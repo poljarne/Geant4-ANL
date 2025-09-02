@@ -20,4 +20,12 @@ This class is responsible for initializing the MySteppingAction, MyPrimaryGenera
 
 SetUserAction(new MyPrimaryGeneratorAction());
 
+Inside the Build() function.
+
+### MyDetectorConstruction Class
+
+This class defines the materials used in this program, which in this case are water, gold and tungsten. Then, it creates a world, which is the place where everything is gonna happen. This world is a box made of air, each side measuring 1 meter. When you create a geometry like this in G4, you need to define a solid world, a logic world and a physical world. The information of how to use each of those can be found in the Geant4 user guide for application developers.
+
+Then a tungsten plate is defined, which measures 1 cm high and wide, and 4 mm deep (in the z-axis). Right after the tungsten plate, a photon scoring plane of 0.1mm thick is defined, which will be used to count the gammas of all the energy ranges. Right after the scoring plane, the target is defined, a 197Au box of 8 mm thick. Both the gold box and the scoring plane have 3 mm high and wide.
+
 
