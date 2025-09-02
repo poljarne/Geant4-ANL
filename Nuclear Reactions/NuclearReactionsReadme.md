@@ -12,4 +12,8 @@ You can download the project from my repository [Photonuclear-Au-8mm](https://gi
 
 ### Main File
 
-The main file
+The main file includes the main function, which does the following: If this program is run on it's own with no other args, the ui is defined. Then the program constructs the runmanager, which is used to initialize the MyDetectorConstruction class, MyPhysicsList class and MyActionInitialization class. It also initialized the visualization and the geometry. Then, the init_vis mac is initialized, which executes the program, and the ui session is opened. On the contrary, if the program is opened with another argument in the console, such as a mac file, the program processes it and opens the UI session.
+
+### MyActionInitialization Class
+
+
