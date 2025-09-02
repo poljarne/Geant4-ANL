@@ -8,4 +8,8 @@ The second one is based on the first one but has a key difference. The gammas ar
 
 ## Photonuclear-Au-8mm
 
-You can download the project from my repository [Photonuclear-Au-8mm](https://github.com/pjarnecup/Photonuclear-Au-8mm/tree/main)
+You can download the project from my repository [Photonuclear-Au-8mm](https://github.com/pjarnecup/Photonuclear-Au-8mm/tree/main). Again, this project used as a base the Hello World basic program from @john9francis. Now I'm gonna explain the different classes involved in this project, and what each of them does.
+
+### Main File
+
+The main file
