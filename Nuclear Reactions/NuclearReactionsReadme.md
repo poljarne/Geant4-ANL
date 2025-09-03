@@ -36,6 +36,28 @@ The physics list used in this program is QGSP_BERT_HP().
 
 ### MyPrimaryGeneratorAction Class
 
+This class defines a G4ParticleGun, which is the source from which particles are gonna be shooted. Defines the type of particle (in this case e-), its energy and its momentum vector. Then, this class includes code to generate the electrons randomly within a cirle of 1 mm of radii.
 
+### MySteppingnAction Class
 
+This class is gonna define bins for different radii intervals in the photon score plane (0.5 mm bins up to 5 cm), therefore there are 100 of these bins (first one cenetered at 0.25 mm for example). Now, for each of the first 3 bins (first 3 radii intervals, 0-0.5mm, 0.5-1mm, 1-1.5mm), we define 80 bins (0-20MeV, 0.25MeV/bin). These represent the energy spectrum of the gammas in each of the first 3 radii intervals. Then there is code to reset the counting of this bins everytime a new electron run is produced.
+
+This class also counts the number of 196Au produced by the reaction of the gammas with the 197Au.
+
+Finally, is the code to detect the gammas inside the photon scoring plane. It stores the number of gammas in each of the 100 radii bins, and also the energy spectrum bins information inside the first 3 intervals.
+
+### MyRunAction Class
+
+Handles per-run bookkeeping, result aggregation (thread-safe), and final output.
+
+**Key roles**
+- **Run start**  
+  Resets counters in `MySteppingAction` and clears global Au-196 count (master thread only).
+- **Run end**  
+  - Aggregates thread-local Au-196 counts with a mutex.  
+  - Prints:
+    - **Photon yield vs radius** (photons/sec and photons/mm²)
+    - **Energy spectra** for the first 3 radial bins (0–1.5 mm, 0.25 MeV steps)
+    - **Au-196 summary**: total atoms, yield, and estimated cross section (mb)
+    - **Bin-by-bin Au-196 estimate** in the 12.75–15 MeV window
 
